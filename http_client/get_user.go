@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"net/http"
 	"strconv"
+	"strings"
 )
 
 func GetUser(userID int64, mode string) (*api.User, error) {
@@ -30,6 +31,7 @@ func GetUser(userID int64, mode string) (*api.User, error) {
 		u.CountryCode = "aq"
 	}
 
+	u.CountryCode = strings.ToLower(u.CountryCode)
 	return u, nil
 }
 
