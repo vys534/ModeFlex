@@ -1,0 +1,6 @@
+assets/generated/user_cards/*
+assets/generated/user_images/*
+config.yaml
+assets/banners/*
+*.db
+.idea

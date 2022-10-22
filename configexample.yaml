@@ -1,0 +1,16 @@
+# What port to listen on, defaults to 3000
+Port:
+
+# Your osu! OAuth app client ID
+ClientID:
+
+# Your osu! OAuth app client secret
+ClientSecret:
+
+# A list of users to allow rendering cards for
+Whitelist:
+  -
+
+# The timeout, in seconds, of when to refresh a card.
+UpdateInterval:
+
