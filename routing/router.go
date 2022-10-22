@@ -7,8 +7,8 @@ import (
 
 func Route(ctx *fasthttp.RequestCtx) {
 	switch string(ctx.Path()) {
-	case "/":
-		routes.RouteIndex(ctx)
+	case "/card":
+		routes.RouteCard(ctx)
 		return
 	default:
 		ctx.SetStatusCode(fasthttp.StatusNotFound)

@@ -13,7 +13,7 @@ import (
 	"time"
 )
 
-func RouteIndex(ctx *fasthttp.RequestCtx) {
+func RouteCard(ctx *fasthttp.RequestCtx) {
 	if len(ctx.QueryArgs().Peek("id")) == 0 {
 		http_client.JSONResponse(ctx, fasthttp.StatusBadRequest, &api.ServerResponse{
 			Message: "No ID provided.",
